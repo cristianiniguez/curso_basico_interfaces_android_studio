@@ -16,26 +16,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:visibility="gone"
         android:id="@+id/etLoginUsername"
+        style="@style/AppTheme.EditTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:drawableStart="@drawable/vector_person"
         android:drawableLeft="@drawable/vector_person"
-        android:drawablePadding="12dp"
         android:hint="@string/hint_user"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivLoginLogo" />
 
     <EditText
+        style="@style/AppTheme.EditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:drawableStart="@drawable/vector_lock"
         android:drawableLeft="@drawable/vector_lock"
-        android:drawablePadding="12dp"
         android:hint="@string/hint_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,11 +43,11 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="12dp"
         android:background="@color/colorPrimary"
         android:text="@string/btn_login"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="12dp"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
